@@ -70,7 +70,7 @@ function handleChange(event){
   try {
   setLoading(true);
  await login(signIn.email, signIn.password);
- history.push("/")
+ history.push("/");
 } catch {
   console.log("Failed to sign in!!")
 }
@@ -119,6 +119,7 @@ function handleChange(event){
               onChange={handleChange}
               id="password"
               autoComplete="current-password"
+              placeholder="Password must be at least six characters"
             />
             
             <Button

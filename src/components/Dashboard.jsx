@@ -64,9 +64,7 @@ const history = useHistory();
           </Switch>
         </div>
        
-       <footer>
-          sauce code
-       </footer>
+       
 
         <div className="logout">
      <Button onClick={handleLogout} variant="contained" className="btn btn-primary">

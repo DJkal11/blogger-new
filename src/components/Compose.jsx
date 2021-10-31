@@ -3,11 +3,12 @@ import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import { useAuth } from "../components/Auth";
 import {db} from "../firebase"
-
+import {useHistory } from "react-router-dom";
 
 
 function Compose(props) {
 const {currentUser} = useAuth();
+const history = useHistory();
   const [blog, setBlog] = useState({
     User: currentUser.email,
       Title: "",
@@ -40,7 +41,7 @@ console.log(currentUser.email);
         Title: "",
         Content: ""
     });
-
+   history.push("/Blogs");
   }
 
   

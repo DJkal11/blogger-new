@@ -119,6 +119,8 @@ function handleChange(event){
               onChange={handleChange}
               id="password"
               autoComplete="current-password"
+              placeholder="Password must be at least six characters"
+              
             />
             
             <Button
