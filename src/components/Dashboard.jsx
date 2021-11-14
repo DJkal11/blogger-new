@@ -28,16 +28,16 @@ function Dashboard() {
     <Router>
       <div>
         <nav className="text-white w-10 md:w-full">
-          <ul className="flex flex-row text-2xl sm:text-4xl">
+          <ul className="flex flex-row text-3xl sm:text-4xl bg-gray-600">
             <li className="p-2 sm:p-4">Blogger</li>
-            <li className="p-2 sm:p-4">
+            <li className="p-2 sm:p-4 hover:bg-gray-900">
               <Link className="no-underline text-white" to="/Blogs">
-                Home
+                Blogs
               </Link>
             </li>
-            <li className="p-2 sm:p-4">
+            <li className="p-2 sm:p-4 hover:bg-gray-900">
               <Link
-                className="no-underline text-white hover:text-gray-800"
+                className="no-underline text-white"
                 to="/Compose"
               >
                 Compose
