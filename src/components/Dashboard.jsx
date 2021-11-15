@@ -27,15 +27,15 @@ function Dashboard() {
   return (
     <Router>
       <div>
-        <nav className="text-white w-10 md:w-full">
-          <ul className="flex flex-row text-3xl sm:text-4xl bg-gray-600">
-            <li className="p-2 sm:p-4">Blogger</li>
-            <li className="p-2 sm:p-4 hover:bg-gray-900">
+        <nav className="text-white w-full md:w-full">
+          <ul className="flex flex-row text-3xl sm:text-4xl sm:w-full bg-gray-600">
+            <li className="p-4 sm:p-4">Blogger</li>
+            <li className="p-4 sm:p-4 hover:bg-gray-900">
               <Link className="no-underline text-white" to="/Blogs">
                 Blogs
               </Link>
             </li>
-            <li className="p-2 sm:p-4 hover:bg-gray-900">
+            <li className="p-4 sm:p-4 hover:bg-gray-900">
               <Link
                 className="no-underline text-white"
                 to="/Compose"
@@ -43,8 +43,6 @@ function Dashboard() {
                 Compose
               </Link>
             </li>
-
-            <li className="p-2 sm:p-4">{currentUser.email}</li>
           </ul>
         </nav>
 

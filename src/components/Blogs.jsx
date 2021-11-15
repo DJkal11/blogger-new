@@ -40,7 +40,7 @@ function Blogs() {
   }
 
   return (
-    <div className="blogs">
+    <div className="blogs text-4xl">
       {loading ? (
         <h1 className="home">Loading...</h1>
       ) : (
@@ -77,7 +77,7 @@ function Blogs() {
         </div>
       )}
 
-      <a className="logout" href="/logout" role="button">
+      <a className="logout text-xl" href="/logout" role="button">
         Log Out
       </a>
     </div>
