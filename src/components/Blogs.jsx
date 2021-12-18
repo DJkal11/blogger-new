@@ -51,7 +51,7 @@ function Blogs() {
           return (
             <div key={blog.key} className="Card sm:w-full">
               <h2>{blog.Title}</h2>
-              <p>
+              <p className="text-xl">
                 <ReactReadMoreReadLess
                   charLimit={100}
                   readMoreText={<b>Read-more▼</b>}
@@ -77,9 +77,6 @@ function Blogs() {
         </div>
       )}
 
-      <a className="logout text-xl" href="/logout" role="button">
-        Log Out
-      </a>
     </div>
   );
 }
